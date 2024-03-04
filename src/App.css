@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #23ff4578;
+  margin: 0;
+}
+
+.app-container {
+  height: 100vh;
+}
+
+h1 {
+  max-width: 750px;
+  min-width: 280px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-family: 'Zen Dots', serif, monospace;
+  color: rgb(27, 43, 64);
+  text-align: center;
+}
+
+.quote-box {
+  width: 90%;
+  max-width: 750px;
+  min-width: 280px;
+  height: 60%;
+  margin: 0 auto;
+  background-color: rgb(27, 43, 64);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 15px 0 rgba(0, 0, 0, 0.6);
+}
+
+.quote-component-div {
+  overflow: auto;
+  height: 80%;
+  padding: 0.5rem;
+}
+
+blockquote {
+  margin: 0 auto;
+  width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  blockquote {
+    margin: 5rem auto;
+  }
+}
+
+.quote-text {
+  font-family: 'Averia Libre', serif, monospace;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 0.8em;
+  margin: 0 0.4rem;
+  color: rgb(10, 255, 230);
+}
+
+.author {
+  font-family: 'Monda', serif, monospace;
+  font-size: 1.1em;
+  text-align: right;
+}
+
+.error-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  font-weight: 900;
+  background-color: rgba(255, 0, 0, 0.3);
+  color: red;
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+button#next-quote-btn {
+  margin: 1.3rem auto;
+  width: 80%;
+  height: 3rem;
+  font-family: 'Monda', serif, monospace;
+  font-size: 1.3em;
+  font-weight: 900;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: rgba(10, 255, 230, 0.8);
+  color: rgb(27, 43, 64);
+  box-shadow: 1px 1px 6px 3px rgba(10, 20, 20, 0.5);
+}
+
+button#next-quote-btn:hover {
+  background-color: rgba(10, 255, 230, 1);
+}
+
+button#next-quote-btn:active {
+  transform: translate(0, 1.5px);
+}
+
+.network-status-success {
+  background-color: rgb(3, 76, 19);
+  color: rgb(182, 249, 183);
+  border: 3px solid rgb(0, 185, 3);
+}
+
+.network-status-warning {
+  background-color: rgb(151, 5, 5);
+  color: rgb(247, 182, 182);
+  border: 3px solid rgb(203, 0, 0);
+}
+
+.network-status-success,
+.network-status-warning {
+  width: 100%;
+  border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.network-status-text {
+  margin: 0;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.info-container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  width: 15.2em;
+}
+
+footer, .info-container {
+  background-color: rgb(4, 14, 24);
+}
+
+.info-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  margin: 0.3rem;
+}
+
+.info-text,
+.info-link:visited,
+.info-link:link {
+  color: rgb(243, 247, 255);
+}
+
+.info-link:hover {
+  color: rgb(136, 172, 242);
+}
